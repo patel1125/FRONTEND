@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <style>
+    
+    table{
+      width: 100%;
+      border-collapse:collapse;
+      border-inline:groove;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    th,td{
+      border: 2px solid whitesmoke;
+      padding: 10px;
+      border-inline:groove;
+      text-align: left;
+    }
+  th{
+    background-color: aquamarine;
+    border-inline:groove;
+  }
+  img{
+    width: 100px;
+    height: auto;
+    
+  }
+  .out-of-stock{
+    color: red;
+    font-weight: bold;
+    
+  }
+  .in-stock{
+    color: green;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <h2> Product Catalog</h2>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="1">Product Name</th>
+        <th>Product Image</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th rowspan="2">Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Storage Box</td>
+        <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT6B96P64rdreP0jW125QGcCig86dAxe0Vt5mbrE0UKAvQyYU7gyQM9T_e-B0VWGfAuvzmEQFUPEha9fkCz7LO_cW-hxq5FPAfwdWgyCFb1"></td>
+        <td>$499</td>
+        <td>Multipurpose plastic Storage box foe home use</td>
+        <td class="in-stock">in-stock</td>
+      </tr>
+      <tr>
+        <td> Travel bag</td>
+        <td><img src=https://www.kuberindustries.co.in/uploads/kuberindustries/products/kuber-industries-luggage-bag--trolley-bags-for-travel--collapsible-luggage-bag--travelling-bag--trol-4394346803221684_l.jpg></td>
+        <td>$1299</td>
+        <td>Durable and spacious travel bag for weekend trips</td>
+        <td class="out-of-stock">out-of-stock</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</body>
+</html>

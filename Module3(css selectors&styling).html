@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contactfrom{
+            background-color: coral;
+            width: 600px;
+            margin: 70px auto;
+            padding: 50px auto;
+            border-radius: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .formfield{
+            display: block;
+            width: 50px;
+            padding: 60px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-inline: 10px;
+        }
+        #submitbtn{
+            background-color: blueviolet;
+            color: whitesmoke;
+            padding: 12px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #submitbtn:hover{background-color: aquamarine;}
+        
+        #successmessage{
+            color: crimson;
+            margin-top: 10px;
+            font-weight: bold;
+            display: none;
+                }
+                .hidden{
+                    display: none;
+                }
+
+    </style>
+</head>
+<body>
+    <form id="contactfrom"><h1>Contact From</h1>
+        <label for="name">Name</label>
+        <input type="text" id="Name" class="formfield" name="name" required>
+        <label for="email"> Email</label>
+        <input type="email" id="email" class="formfield" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" class="fromfield" name="message" required></textarea>
+        <button type="submit" id="submitbtn">Submit</button>
+        <p id="successMessage" class="hidden"> Your message has been sent successfullly!</p>
+
+    </form>
+</body>
+</html>
